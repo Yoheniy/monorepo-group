@@ -1,0 +1,11 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { DataCard, FormField, Panel, PrimaryButton, SecondaryButton, StatusBadge } from '@cph/ui-components';
+import { capitalizeWords, formatDate, truncateText } from '@cph/utils';
+export function EventBoard({ title, events, activeCategory, onCategoryChange }) {
+    const filtered = activeCategory === 'All' ? events : events.filter((event) => event.category === activeCategory);
+    return (_jsxs(DataCard, { title: title, subtitle: "Feature-X: Event & Schedule Manager", children: [_jsxs("div", { style: { display: 'flex', gap: '0.5rem', marginBottom: '1rem' }, children: [_jsx(SecondaryButton, { onClick: () => onCategoryChange('All'), children: "All" }), _jsx(SecondaryButton, { onClick: () => onCategoryChange('Academic'), children: "Academic" }), _jsx(SecondaryButton, { onClick: () => onCategoryChange('Social'), children: "Social" }), _jsx(SecondaryButton, { onClick: () => onCategoryChange('Career'), children: "Career" })] }), _jsx("div", { style: { display: 'grid', gap: '0.75rem' }, children: filtered.map((event) => (_jsxs(Panel, { heading: capitalizeWords(event.title), children: [_jsxs("div", { style: { display: 'flex', justifyContent: 'space-between', marginBottom: '0.4rem' }, children: [_jsx(StatusBadge, { label: event.category, tone: "neutral" }), _jsx("small", { children: formatDate(event.date) })] }), _jsx("p", { style: { margin: '0 0 0.6rem 0' }, children: truncateText(event.description, 120) }), _jsx("small", { children: event.location })] }, event.id))) })] }));
+}
+export function EventCreator({ title, draftTitle, draftDate, onTitleChange, onDateChange, onCreate }) {
+    return (_jsxs(DataCard, { title: title, subtitle: "Compose shared form components into feature flows", children: [_jsx(FormField, { label: "Event title", children: _jsx("input", { value: draftTitle, onChange: (event) => onTitleChange(event.target.value), placeholder: "Career fair" }) }), _jsx(FormField, { label: "Event date", children: _jsx("input", { type: "date", value: draftDate, onChange: (event) => onDateChange(event.target.value) }) }), _jsx(PrimaryButton, { onClick: onCreate, children: "Add event" })] }));
+}
+//# sourceMappingURL=index.js.map
