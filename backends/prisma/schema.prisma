@@ -1,0 +1,243 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             String            @id @default(cuid())
+  email          String            @unique
+  password       String
+  fullName       String
+  phone          String?
+  department     String
+  studentId      String            @unique
+  batch          String?
+  idFront        String
+  idBack         String
+  role           UserRole          @default(PENDING)
+  status         ApprovalStatus    @default(PENDING)
+  approvedById   String?
+  approvedAt     DateTime?
+  rejectedAt     DateTime?
+  createdAt      DateTime          @default(now())
+  updatedAt      DateTime          @updatedAt
+  participations TeamParticipant[]
+  approvedBy     User?             @relation("Approver", fields: [approvedById], references: [id])
+  approvedUsers  User[]            @relation("Approver")
+  votes          Vote[]
+
+  @@map("users")
+}
+
+model Tournament {
+  id           String            @id @default(cuid())
+  name         String
+  season       String            @unique
+  startDate    DateTime
+  endDate      DateTime?
+  sponsors     String?
+  totalClubs   Int
+  maxPlayers   Int
+  isActive     Boolean           @default(true)
+  createdAt    DateTime          @default(now())
+  matches      Match[]
+  polls        Poll[]
+  standings    Standing[]
+  participants TeamParticipant[]
+  teams        Team[]
+
+  @@map("tournaments")
+}
+
+model Team {
+  id           String            @id @default(cuid())
+  name         String
+  shortName    String?
+  logo         String?
+  color        String            @default("#7C3AED")
+  department   String
+  tournamentId String
+  createdAt    DateTime          @default(now())
+  awayMatches  Match[]           @relation("AwayTeam")
+  homeMatches  Match[]           @relation("HomeTeam")
+  standing     Standing?
+  coach        TeamParticipant?  @relation("TeamCoach")
+  participants TeamParticipant[] @relation("TeamMembers")
+  tournament   Tournament        @relation(fields: [tournamentId], references: [id])
+
+  @@unique([name, tournamentId])
+  @@map("teams")
+}
+
+model TeamParticipant {
+  id            String          @id @default(cuid())
+  userId        String
+  teamId        String
+  tournamentId  String
+  jerseyNumber  Int?
+  coachedTeamId String?         @unique
+  position      PlayerPosition?
+  injuries      Injury[]
+  coachedTeam   Team?           @relation("TeamCoach", fields: [coachedTeamId], references: [id])
+  team          Team            @relation("TeamMembers", fields: [teamId], references: [id])
+  tournament    Tournament      @relation(fields: [tournamentId], references: [id])
+  user          User            @relation(fields: [userId], references: [id])
+
+  @@unique([userId, tournamentId])
+  @@unique([teamId, jerseyNumber])
+  @@map("team_participants")
+}
+
+model Standing {
+  id           String     @id @default(cuid())
+  tournamentId String
+  teamId       String     @unique
+  position     Int        @default(0)
+  played       Int        @default(0)
+  won          Int        @default(0)
+  drawn        Int        @default(0)
+  lost         Int        @default(0)
+  gf           Int        @default(0)
+  ga           Int        @default(0)
+  gd           Int        @default(0)
+  points       Int        @default(0)
+  form         String     @default("")
+  team         Team       @relation(fields: [teamId], references: [id])
+  tournament   Tournament @relation(fields: [tournamentId], references: [id])
+
+  @@unique([tournamentId, teamId])
+  @@map("standings")
+}
+
+model Match {
+  id           String       @id @default(cuid())
+  tournamentId String
+  homeTeamId   String
+  awayTeamId   String
+  date         DateTime
+  time         String?
+  venue        String       @default("Main Stadium")
+  status       MatchStatus  @default(SCHEDULED)
+  homeGoals    Int?
+  awayGoals    Int?
+  matchweek    Int?
+  createdAt    DateTime     @default(now())
+  injuries     Injury[]
+  events       MatchEvent[]
+  awayTeam     Team         @relation("AwayTeam", fields: [awayTeamId], references: [id])
+  homeTeam     Team         @relation("HomeTeam", fields: [homeTeamId], references: [id])
+  tournament   Tournament   @relation(fields: [tournamentId], references: [id])
+  polls        Poll[]
+
+  @@map("matches")
+}
+
+model MatchEvent {
+  id          String  @id @default(cuid())
+  matchId     String
+  minute      Int
+  type        String
+  playerId    String?
+  description String?
+  match       Match   @relation(fields: [matchId], references: [id])
+
+  @@map("match_events")
+}
+
+model Injury {
+  id               String          @id @default(cuid())
+  participantId    String
+  matchId          String?
+  injuryType       String
+  severity         String
+  expectedRecovery String?
+  status           String          @default("Active")
+  notes            String?
+  reportedAt       DateTime        @default(now())
+  match            Match?          @relation(fields: [matchId], references: [id])
+  participant      TeamParticipant @relation(fields: [participantId], references: [id])
+
+  @@map("injuries")
+}
+
+model Poll {
+  id           String       @id @default(cuid())
+  tournamentId String
+  question     String
+  type         PollType
+  matchId      String?
+  isActive     Boolean      @default(true)
+  startsAt     DateTime
+  endsAt       DateTime
+  createdAt    DateTime     @default(now())
+  options      PollOption[]
+  match        Match?       @relation(fields: [matchId], references: [id])
+  tournament   Tournament   @relation(fields: [tournamentId], references: [id])
+  votes        Vote[]
+
+  @@map("polls")
+}
+
+model PollOption {
+  id       String  @id @default(cuid())
+  pollId   String
+  title    String
+  playerId String?
+  image    String?
+  poll     Poll    @relation(fields: [pollId], references: [id])
+  votes    Vote[]
+
+  @@map("poll_options")
+}
+
+model Vote {
+  id       String     @id @default(cuid())
+  pollId   String
+  optionId String
+  userId   String
+  votedAt  DateTime   @default(now())
+  option   PollOption @relation(fields: [optionId], references: [id])
+  poll     Poll       @relation(fields: [pollId], references: [id])
+  user     User       @relation(fields: [userId], references: [id])
+
+  @@unique([pollId, userId])
+  @@map("votes")
+}
+
+enum UserRole {
+  ADMIN
+  COACH
+  PLAYER
+  PENDING
+}
+
+enum ApprovalStatus {
+  PENDING
+  APPROVED
+  REJECTED
+}
+
+enum MatchStatus {
+  SCHEDULED
+  LIVE
+  FINISHED
+  POSTPONED
+  CANCELLED
+}
+
+enum PollType {
+  PLAYER
+  GOAL
+  TEAM
+}
+
+enum PlayerPosition {
+  GK
+  DEF
+  MID
+  FWD
+}
