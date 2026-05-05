@@ -1,0 +1,447 @@
+
+
+> @astu/web@0.0.0 lint
+> eslint .
+
+[1G[0K[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/App.jsx[24m[0m
+[0m   [2m1:27[22m  [33mwarning[39m  'Router' is defined but never used                 [2mno-unused-vars[22m[0m
+[0m   [2m1:35[22m  [33mwarning[39m  'Routes' is defined but never used                 [2mno-unused-vars[22m[0m
+[0m   [2m1:43[22m  [33mwarning[39m  'Route' is defined but never used                  [2mno-unused-vars[22m[0m
+[0m   [2m1:50[22m  [33mwarning[39m  'Navigate' is defined but never used               [2mno-unused-vars[22m[0m
+[0m   [2m4:8[22m   [33mwarning[39m  'Login' is defined but never used                  [2mno-unused-vars[22m[0m
+[0m   [2m5:8[22m   [33mwarning[39m  'Register' is defined but never used               [2mno-unused-vars[22m[0m
+[0m   [2m8:8[22m   [33mwarning[39m  'AdminLayout' is defined but never used            [2mno-unused-vars[22m[0m
+[0m   [2m9:8[22m   [33mwarning[39m  'UserLayout' is defined but never used             [2mno-unused-vars[22m[0m
+[0m  [2m10:10[22m  [33mwarning[39m  'AdminProtected' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m10:26[22m  [33mwarning[39m  'DashboardRedirect' is defined but never used      [2mno-unused-vars[22m[0m
+[0m  [2m10:45[22m  [33mwarning[39m  'ProtectedRoute' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m13:8[22m   [33mwarning[39m  'AdminDashboard' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m14:8[22m   [33mwarning[39m  'UserManagement' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m15:8[22m   [33mwarning[39m  'CreateUser' is defined but never used             [2mno-unused-vars[22m[0m
+[0m  [2m16:8[22m   [33mwarning[39m  'TournamentsAndLeagues' is defined but never used  [2mno-unused-vars[22m[0m
+[0m  [2m17:8[22m   [33mwarning[39m  'MatchesAndEvents' is defined but never used       [2mno-unused-vars[22m[0m
+[0m  [2m18:8[22m   [33mwarning[39m  'LeagueStandings' is defined but never used        [2mno-unused-vars[22m[0m
+[0m  [2m19:8[22m   [33mwarning[39m  'TeamsAndParticipants' is defined but never used   [2mno-unused-vars[22m[0m
+[0m  [2m20:8[22m   [33mwarning[39m  'PollsAndVotes' is defined but never used          [2mno-unused-vars[22m[0m
+[0m  [2m21:8[22m   [33mwarning[39m  'AdminInjuries' is defined but never used          [2mno-unused-vars[22m[0m
+[0m  [2m24:8[22m   [33mwarning[39m  'Dashboard' is defined but never used              [2mno-unused-vars[22m[0m
+[0m  [2m25:8[22m   [33mwarning[39m  'Profile' is defined but never used                [2mno-unused-vars[22m[0m
+[0m  [2m26:8[22m   [33mwarning[39m  'UserInjuries' is defined but never used           [2mno-unused-vars[22m[0m
+[0m  [2m27:8[22m   [33mwarning[39m  'Polls' is defined but never used                  [2mno-unused-vars[22m[0m
+[0m  [2m28:8[22m   [33mwarning[39m  'Standings' is defined but never used              [2mno-unused-vars[22m[0m
+[0m  [2m29:8[22m   [33mwarning[39m  'Fixtures' is defined but never used               [2mno-unused-vars[22m[0m
+[0m  [2m30:8[22m   [33mwarning[39m  'MyTeam' is defined but never used                 [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/SelectPatternPage.jsx[24m[0m
+[0m  [2m1:8[22m  [33mwarning[39m  'React' is defined but never used  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/components/AdminLayout.jsx[24m[0m
+[0m  [2m2:10[22m   [33mwarning[39m  'NavLink' is defined but never used      [2mno-unused-vars[22m[0m
+[0m  [2m2:19[22m   [33mwarning[39m  'Outlet' is defined but never used       [2mno-unused-vars[22m[0m
+[0m  [2m4:18[22m   [33mwarning[39m  'Table' is defined but never used        [2mno-unused-vars[22m[0m
+[0m  [2m4:65[22m   [33mwarning[39m  'Vote' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m4:90[22m   [33mwarning[39m  'ListChecks' is defined but never used   [2mno-unused-vars[22m[0m
+[0m  [2m4:102[22m  [33mwarning[39m  'Goal' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m4:108[22m  [33mwarning[39m  'LogOut' is defined but never used       [2mno-unused-vars[22m[0m
+[0m  [2m4:116[22m  [33mwarning[39m  'ShieldCheck' is defined but never used  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/components/AdminSidebar.jsx[24m[0m
+[0m  [2m1:10[22m  [33mwarning[39m  'NavLink' is defined but never used      [2mno-unused-vars[22m[0m
+[0m  [2m3:10[22m  [33mwarning[39m  'Clock' is defined but never used        [2mno-unused-vars[22m[0m
+[0m  [2m3:37[22m  [33mwarning[39m  'Table' is defined but never used        [2mno-unused-vars[22m[0m
+[0m  [2m3:58[22m  [33mwarning[39m  'Goal' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m4:14[22m  [33mwarning[39m  'Vote' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m4:20[22m  [33mwarning[39m  'LogOut' is defined but never used       [2mno-unused-vars[22m[0m
+[0m  [2m4:28[22m  [33mwarning[39m  'ShieldCheck' is defined but never used  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/components/Navbar.jsx[24m[0m
+[0m  [2m3:10[22m  [33mwarning[39m  'NavLink' is defined but never used  [2mno-unused-vars[22m[0m
+[0m  [2m5:3[22m   [33mwarning[39m  'Menu' is defined but never used     [2mno-unused-vars[22m[0m
+[0m  [2m5:9[22m   [33mwarning[39m  'X' is defined but never used        [2mno-unused-vars[22m[0m
+[0m  [2m5:12[22m  [33mwarning[39m  'LogOut' is defined but never used   [2mno-unused-vars[22m[0m
+[0m  [2m5:26[22m  [33mwarning[39m  'Shield' is defined but never used   [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/components/ProtectedRoute.jsx[24m[0m
+[0m  [2m3:10[22m  [33mwarning[39m  'Navigate' is defined but never used  [2mno-unused-vars[22m[0m
+[0m  [2m3:20[22m  [33mwarning[39m  'Outlet' is defined but never used    [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/components/adminRoute.jsx[24m[0m
+[0m  [2m3:10[22m  [33mwarning[39m  'Navigate' is defined but never used  [2mno-unused-vars[22m[0m
+[0m  [2m3:20[22m  [33mwarning[39m  'Outlet' is defined but never used    [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/layouts/UserLayout.jsx[24m[0m
+[0m  [2m2:8[22m   [33mwarning[39m  'Navbar' is defined but never used  [2mno-unused-vars[22m[0m
+[0m  [2m3:10[22m  [33mwarning[39m  'Outlet' is defined but never used  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/main.jsx[24m[0m
+[0m  [2m1:10[22m  [33mwarning[39m  'StrictMode' is defined but never used  [2mno-unused-vars[22m[0m
+[0m  [2m3:8[22m   [33mwarning[39m  'App' is defined but never used         [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/pages/Register.jsx[24m[0m
+[0m    [2m2:23[22m  [33mwarning[39m  'Link' is defined but never used                             [2mno-unused-vars[22m[0m
+[0m    [2m3:10[22m  [33mwarning[39m  'Mail' is defined but never used                             [2mno-unused-vars[22m[0m
+[0m    [2m3:16[22m  [33mwarning[39m  'Lock' is defined but never used                             [2mno-unused-vars[22m[0m
+[0m    [2m3:22[22m  [33mwarning[39m  'User' is defined but never used                             [2mno-unused-vars[22m[0m
+[0m    [2m3:28[22m  [33mwarning[39m  'Phone' is defined but never used                            [2mno-unused-vars[22m[0m
+[0m    [2m3:35[22m  [33mwarning[39m  'BookOpen' is defined but never used                         [2mno-unused-vars[22m[0m
+[0m    [2m3:45[22m  [33mwarning[39m  'IdCard' is defined but never used                           [2mno-unused-vars[22m[0m
+[0m    [2m3:53[22m  [33mwarning[39m  'Calendar' is defined but never used                         [2mno-unused-vars[22m[0m
+[0m    [2m3:63[22m  [33mwarning[39m  'Trophy' is defined but never used                           [2mno-unused-vars[22m[0m
+[0m    [2m3:71[22m  [33mwarning[39m  'Target' is defined but never used                           [2mno-unused-vars[22m[0m
+[0m  [2m309:9[22m   [33mwarning[39m  'checkboxContainerStyle' is assigned a value but never used  [2mno-unused-vars[22m[0m
+[0m  [2m315:9[22m   [33mwarning[39m  'checkboxLabelStyle' is assigned a value but never used      [2mno-unused-vars[22m[0m
+[0m  [2m321:9[22m   [33mwarning[39m  'checkboxStyle' is assigned a value but never used           [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/pages/UserDashboard.jsx[24m[0m
+[0m  [2m2:10[22m  [33mwarning[39m  'NavLink' is defined but never used  [2mno-unused-vars[22m[0m
+[0m  [2m4:96[22m  [33mwarning[39m  'LogOut' is defined but never used   [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/pages/admin/AdminDashboard.jsx[24m[0m
+[0m  [2m4:3[22m   [33mwarning[39m  'Users' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m4:10[22m  [33mwarning[39m  'Clock' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m4:17[22m  [33mwarning[39m  'Trophy' is defined but never used        [2mno-unused-vars[22m[0m
+[0m  [2m4:25[22m  [33mwarning[39m  'UsersRound' is defined but never used    [2mno-unused-vars[22m[0m
+[0m  [2m4:37[22m  [33mwarning[39m  'ArrowUpRight' is defined but never used  [2mno-unused-vars[22m[0m
+[0m  [2m4:51[22m  [33mwarning[39m  'AlertCircle' is defined but never used   [2mno-unused-vars[22m[0m
+[0m  [2m5:3[22m   [33mwarning[39m  'UserCheck' is defined but never used     [2mno-unused-vars[22m[0m
+[0m  [2m5:14[22m  [33mwarning[39m  'ShieldAlert' is defined but never used   [2mno-unused-vars[22m[0m
+[0m  [2m5:27[22m  [33mwarning[39m  'Calendar' is defined but never used      [2mno-unused-vars[22m[0m
+[0m  [2m5:37[22m  [33mwarning[39m  'Activity' is defined but never used      [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/pages/admin/CreateUser.jsx[24m[0m
+[0m  [2m4:10[22m  [33mwarning[39m  'UserPlus' is defined but never used     [2mno-unused-vars[22m[0m
+[0m  [2m4:20[22m  [33mwarning[39m  'Loader2' is defined but never used      [2mno-unused-vars[22m[0m
+[0m  [2m4:29[22m  [33mwarning[39m  'AlertCircle' is defined but never used  [2mno-unused-vars[22m[0m
+[0m  [2m4:42[22m  [33mwarning[39m  'CheckCircle' is defined but never used  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/pages/admin/Injuries.jsx[24m[0m
+[0m    [2m4:3[22m  [33mwarning[39m  'AlertTriangle' is defined but never used      [2mno-unused-vars[22m[0m
+[0m    [2m5:3[22m  [33mwarning[39m  'Plus' is defined but never used               [2mno-unused-vars[22m[0m
+[0m    [2m6:3[22m  [33mwarning[39m  'Edit' is defined but never used               [2mno-unused-vars[22m[0m
+[0m    [2m7:3[22m  [33mwarning[39m  'Trash2' is defined but never used             [2mno-unused-vars[22m[0m
+[0m    [2m8:3[22m  [33mwarning[39m  'Calendar' is defined but never used           [2mno-unused-vars[22m[0m
+[0m    [2m9:3[22m  [33mwarning[39m  'Clock' is defined but never used              [2mno-unused-vars[22m[0m
+[0m   [2m10:3[22m  [33mwarning[39m  'User' is defined but never used               [2mno-unused-vars[22m[0m
+[0m   [2m11:3[22m  [33mwarning[39m  'Save' is defined but never used               [2mno-unused-vars[22m[0m
+[0m   [2m12:3[22m  [33mwarning[39m  'X' is defined but never used                  [2mno-unused-vars[22m[0m
+[0m   [2m13:3[22m  [33mwarning[39m  'Search' is defined but never used             [2mno-unused-vars[22m[0m
+[0m   [2m14:3[22m  [33mwarning[39m  'ChevronDown' is defined but never used        [2mno-unused-vars[22m[0m
+[0m   [2m15:3[22m  [33mwarning[39m  'ChevronUp' is defined but never used          [2mno-unused-vars[22m[0m
+[0m   [2m16:3[22m  [33mwarning[39m  'Filter' is defined but never used             [2mno-unused-vars[22m[0m
+[0m   [2m17:3[22m  [33mwarning[39m  'Download' is defined but never used           [2mno-unused-vars[22m[0m
+[0m   [2m18:3[22m  [33mwarning[39m  'Eye' is defined but never used                [2mno-unused-vars[22m[0m
+[0m   [2m19:3[22m  [33mwarning[39m  'MoreVertical' is defined but never used       [2mno-unused-vars[22m[0m
+[0m   [2m20:3[22m  [33mwarning[39m  'CheckCircle' is defined but never used        [2mno-unused-vars[22m[0m
+[0m   [2m21:3[22m  [33mwarning[39m  'Loader2' is defined but never used            [2mno-unused-vars[22m[0m
+[0m   [2m22:3[22m  [33mwarning[39m  'Shield' is defined but never used             [2mno-unused-vars[22m[0m
+[0m   [2m23:3[22m  [33mwarning[39m  'Thermometer' is defined but never used        [2mno-unused-vars[22m[0m
+[0m   [2m24:3[22m  [33mwarning[39m  'AlertCircle' is defined but never used        [2mno-unused-vars[22m[0m
+[0m   [2m25:3[22m  [33mwarning[39m  'ChevronLeft' is defined but never used        [2mno-unused-vars[22m[0m
+[0m   [2m26:3[22m  [33mwarning[39m  'ChevronRight' is defined but never used       [2mno-unused-vars[22m[0m
+[0m   [2m27:3[22m  [33mwarning[39m  'ChevronsLeft' is defined but never used       [2mno-unused-vars[22m[0m
+[0m   [2m28:3[22m  [33mwarning[39m  'ChevronsRight' is defined but never used      [2mno-unused-vars[22m[0m
+[0m  [2m117:9[22m  [33mwarning[39m  'SortIcon' is assigned a value but never used  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/pages/admin/LeagueStandings.jsx[24m[0m
+[0m  [2m4:3[22m   [33mwarning[39m  'Table' is defined but never used          [2mno-unused-vars[22m[0m
+[0m  [2m4:10[22m  [33mwarning[39m  'Trophy' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m4:18[22m  [33mwarning[39m  'ChevronDown' is defined but never used    [2mno-unused-vars[22m[0m
+[0m  [2m4:31[22m  [33mwarning[39m  'AlertTriangle' is defined but never used  [2mno-unused-vars[22m[0m
+[0m  [2m4:46[22m  [33mwarning[39m  'RefreshCw' is defined but never used      [2mno-unused-vars[22m[0m
+[0m  [2m4:57[22m  [33mwarning[39m  'Search' is defined but never used         [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/pages/admin/MatchesAndEvents.jsx[24m[0m
+[0m   [2m4:3[22m   [33mwarning[39m  'CalendarDays' is defined but never used          [2mno-unused-vars[22m[0m
+[0m   [2m4:17[22m  [33mwarning[39m  'Plus' is defined but never used                  [2mno-unused-vars[22m[0m
+[0m   [2m4:23[22m  [33mwarning[39m  'Clock' is defined but never used                 [2mno-unused-vars[22m[0m
+[0m   [2m4:30[22m  [33mwarning[39m  'Goal' is defined but never used                  [2mno-unused-vars[22m[0m
+[0m   [2m4:36[22m  [33mwarning[39m  'Edit' is defined but never used                  [2mno-unused-vars[22m[0m
+[0m   [2m4:42[22m  [33mwarning[39m  'Trash2' is defined but never used                [2mno-unused-vars[22m[0m
+[0m   [2m4:50[22m  [33mwarning[39m  'AlertTriangle' is defined but never used         [2mno-unused-vars[22m[0m
+[0m   [2m4:65[22m  [33mwarning[39m  'Search' is defined but never used                [2mno-unused-vars[22m[0m
+[0m   [2m5:3[22m   [33mwarning[39m  'Filter' is defined but never used                [2mno-unused-vars[22m[0m
+[0m   [2m5:11[22m  [33mwarning[39m  'ChevronDown' is defined but never used           [2mno-unused-vars[22m[0m
+[0m   [2m5:24[22m  [33mwarning[39m  'X' is defined but never used                     [2mno-unused-vars[22m[0m
+[0m   [2m5:27[22m  [33mwarning[39m  'Check' is defined but never used                 [2mno-unused-vars[22m[0m
+[0m   [2m5:34[22m  [33mwarning[39m  'Users' is defined but never used                 [2mno-unused-vars[22m[0m
+[0m   [2m5:41[22m  [33mwarning[39m  'Trophy' is defined but never used                [2mno-unused-vars[22m[0m
+[0m   [2m5:49[22m  [33mwarning[39m  'Save' is defined but never used                  [2mno-unused-vars[22m[0m
+[0m  [2m13:10[22m  [33mwarning[39m  'matchEvents' is assigned a value but never used  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/pages/admin/PollsAndVotes.jsx[24m[0m
+[0m  [2m4:3[22m   [33mwarning[39m  'BarChart3' is defined but never used      [2mno-unused-vars[22m[0m
+[0m  [2m4:14[22m  [33mwarning[39m  'Plus' is defined but never used           [2mno-unused-vars[22m[0m
+[0m  [2m4:20[22m  [33mwarning[39m  'Vote' is defined but never used           [2mno-unused-vars[22m[0m
+[0m  [2m4:26[22m  [33mwarning[39m  'Edit' is defined but never used           [2mno-unused-vars[22m[0m
+[0m  [2m4:32[22m  [33mwarning[39m  'Trash2' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m4:40[22m  [33mwarning[39m  'Users' is defined but never used          [2mno-unused-vars[22m[0m
+[0m  [2m4:47[22m  [33mwarning[39m  'Trophy' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m4:55[22m  [33mwarning[39m  'AlertTriangle' is defined but never used  [2mno-unused-vars[22m[0m
+[0m  [2m5:3[22m   [33mwarning[39m  'Save' is defined but never used           [2mno-unused-vars[22m[0m
+[0m  [2m5:9[22m   [33mwarning[39m  'X' is defined but never used              [2mno-unused-vars[22m[0m
+[0m  [2m5:12[22m  [33mwarning[39m  'Search' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m5:20[22m  [33mwarning[39m  'Filter' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m5:28[22m  [33mwarning[39m  'CheckCircle' is defined but never used    [2mno-unused-vars[22m[0m
+[0m  [2m5:41[22m  [33mwarning[39m  'Clock' is defined but never used          [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/pages/admin/TeamsAndParticipants.jsx[24m[0m
+[0m   [2m4:3[22m   [33mwarning[39m  'UsersRound' is defined but never used                   [2mno-unused-vars[22m[0m
+[0m   [2m4:15[22m  [33mwarning[39m  'Plus' is defined but never used                         [2mno-unused-vars[22m[0m
+[0m   [2m4:21[22m  [33mwarning[39m  'Edit' is defined but never used                         [2mno-unused-vars[22m[0m
+[0m   [2m4:27[22m  [33mwarning[39m  'Trash2' is defined but never used                       [2mno-unused-vars[22m[0m
+[0m   [2m4:35[22m  [33mwarning[39m  'UserPlus' is defined but never used                     [2mno-unused-vars[22m[0m
+[0m   [2m4:45[22m  [33mwarning[39m  'UserMinus' is defined but never used                    [2mno-unused-vars[22m[0m
+[0m   [2m4:56[22m  [33mwarning[39m  'AlertTriangle' is defined but never used                [2mno-unused-vars[22m[0m
+[0m   [2m5:3[22m   [33mwarning[39m  'Shield' is defined but never used                       [2mno-unused-vars[22m[0m
+[0m   [2m5:11[22m  [33mwarning[39m  'Save' is defined but never used                         [2mno-unused-vars[22m[0m
+[0m   [2m5:17[22m  [33mwarning[39m  'X' is defined but never used                            [2mno-unused-vars[22m[0m
+[0m   [2m5:20[22m  [33mwarning[39m  'Search' is defined but never used                       [2mno-unused-vars[22m[0m
+[0m   [2m5:28[22m  [33mwarning[39m  'Filter' is defined but never used                       [2mno-unused-vars[22m[0m
+[0m   [2m5:36[22m  [33mwarning[39m  'Shirt' is defined but never used                        [2mno-unused-vars[22m[0m
+[0m   [2m5:43[22m  [33mwarning[39m  'Users' is defined but never used                        [2mno-unused-vars[22m[0m
+[0m   [2m5:50[22m  [33mwarning[39m  'Trophy' is defined but never used                       [2mno-unused-vars[22m[0m
+[0m   [2m5:58[22m  [33mwarning[39m  'Goal' is defined but never used                         [2mno-unused-vars[22m[0m
+[0m   [2m6:3[22m   [33mwarning[39m  'ChevronLeft' is defined but never used                  [2mno-unused-vars[22m[0m
+[0m   [2m6:16[22m  [33mwarning[39m  'ChevronRight' is defined but never used                 [2mno-unused-vars[22m[0m
+[0m   [2m6:30[22m  [33mwarning[39m  'ChevronsLeft' is defined but never used                 [2mno-unused-vars[22m[0m
+[0m   [2m6:44[22m  [33mwarning[39m  'ChevronsRight' is defined but never used                [2mno-unused-vars[22m[0m
+[0m   [2m6:59[22m  [33mwarning[39m  'User' is defined but never used                         [2mno-unused-vars[22m[0m
+[0m   [2m6:65[22m  [33mwarning[39m  'Crown' is defined but never used                        [2mno-unused-vars[22m[0m
+[0m   [2m7:3[22m   [33mwarning[39m  'CheckCircle' is defined but never used                  [2mno-unused-vars[22m[0m
+[0m   [2m7:16[22m  [33mwarning[39m  'Info' is defined but never used                         [2mno-unused-vars[22m[0m
+[0m   [2m7:22[22m  [33mwarning[39m  'Upload' is defined but never used                       [2mno-unused-vars[22m[0m
+[0m   [2m7:30[22m  [33mwarning[39m  'Loader2' is defined but never used                      [2mno-unused-vars[22m[0m
+[0m  [2m17:10[22m  [33mwarning[39m  'selectedTournament' is assigned a value but never used  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/pages/admin/TournamentsAndLeagues.jsx[24m[0m
+[0m    [2m4:3[22m   [33mwarning[39m  'Plus' is defined but never used                          [2mno-unused-vars[22m[0m
+[0m    [2m4:9[22m   [33mwarning[39m  'Trophy' is defined but never used                        [2mno-unused-vars[22m[0m
+[0m    [2m4:17[22m  [33mwarning[39m  'Table' is defined but never used                         [2mno-unused-vars[22m[0m
+[0m    [2m4:24[22m  [33mwarning[39m  'Edit' is defined but never used                          [2mno-unused-vars[22m[0m
+[0m    [2m4:30[22m  [33mwarning[39m  'Trash2' is defined but never used                        [2mno-unused-vars[22m[0m
+[0m    [2m4:38[22m  [33mwarning[39m  'Calendar' is defined but never used                      [2mno-unused-vars[22m[0m
+[0m    [2m4:48[22m  [33mwarning[39m  'Users' is defined but never used                         [2mno-unused-vars[22m[0m
+[0m    [2m4:55[22m  [33mwarning[39m  'AlertTriangle' is defined but never used                 [2mno-unused-vars[22m[0m
+[0m    [2m4:70[22m  [33mwarning[39m  'Search' is defined but never used                        [2mno-unused-vars[22m[0m
+[0m    [2m5:3[22m   [33mwarning[39m  'ChevronDown' is defined but never used                   [2mno-unused-vars[22m[0m
+[0m    [2m5:16[22m  [33mwarning[39m  'XCircle' is defined but never used                       [2mno-unused-vars[22m[0m
+[0m    [2m5:25[22m  [33mwarning[39m  'Save' is defined but never used                          [2mno-unused-vars[22m[0m
+[0m  [2m126:13[22m  [33mwarning[39m  'result' is assigned a value but never used               [2mno-unused-vars[22m[0m
+[0m  [2m201:9[22m   [33mwarning[39m  'handleTeamSelection' is assigned a value but never used  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/pages/admin/UserManagement.jsx[24m[0m
+[0m  [2m4:3[22m   [33mwarning[39m  'Search' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m4:11[22m  [33mwarning[39m  'CheckCircle' is defined but never used    [2mno-unused-vars[22m[0m
+[0m  [2m4:24[22m  [33mwarning[39m  'XCircle' is defined but never used        [2mno-unused-vars[22m[0m
+[0m  [2m4:33[22m  [33mwarning[39m  'Edit' is defined but never used           [2mno-unused-vars[22m[0m
+[0m  [2m4:39[22m  [33mwarning[39m  'Trash2' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m4:47[22m  [33mwarning[39m  'UserPlus' is defined but never used       [2mno-unused-vars[22m[0m
+[0m  [2m4:57[22m  [33mwarning[39m  'Loader2' is defined but never used        [2mno-unused-vars[22m[0m
+[0m  [2m5:3[22m   [33mwarning[39m  'AlertTriangle' is defined but never used  [2mno-unused-vars[22m[0m
+[0m  [2m5:18[22m  [33mwarning[39m  'Save' is defined but never used           [2mno-unused-vars[22m[0m
+[0m  [2m5:24[22m  [33mwarning[39m  'Filter' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m5:32[22m  [33mwarning[39m  'X' is defined but never used              [2mno-unused-vars[22m[0m
+[0m  [2m5:35[22m  [33mwarning[39m  'Users' is defined but never used          [2mno-unused-vars[22m[0m
+[0m  [2m5:42[22m  [33mwarning[39m  'Shield' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m5:50[22m  [33mwarning[39m  'UserCheck' is defined but never used      [2mno-unused-vars[22m[0m
+[0m  [2m5:61[22m  [33mwarning[39m  'UserX' is defined but never used          [2mno-unused-vars[22m[0m
+[0m  [2m6:3[22m   [33mwarning[39m  'Mail' is defined but never used           [2mno-unused-vars[22m[0m
+[0m  [2m6:9[22m   [33mwarning[39m  'Phone' is defined but never used          [2mno-unused-vars[22m[0m
+[0m  [2m6:16[22m  [33mwarning[39m  'Calendar' is defined but never used       [2mno-unused-vars[22m[0m
+[0m  [2m6:26[22m  [33mwarning[39m  'ChevronLeft' is defined but never used    [2mno-unused-vars[22m[0m
+[0m  [2m6:39[22m  [33mwarning[39m  'ChevronRight' is defined but never used   [2mno-unused-vars[22m[0m
+[0m  [2m6:53[22m  [33mwarning[39m  'ChevronsLeft' is defined but never used   [2mno-unused-vars[22m[0m
+[0m  [2m6:67[22m  [33mwarning[39m  'ChevronsRight' is defined but never used  [2mno-unused-vars[22m[0m
+[0m  [2m7:3[22m   [33mwarning[39m  'Eye' is defined but never used            [2mno-unused-vars[22m[0m
+[0m  [2m7:8[22m   [33mwarning[39m  'Download' is defined but never used       [2mno-unused-vars[22m[0m
+[0m  [2m7:18[22m  [33mwarning[39m  'Key' is defined but never used            [2mno-unused-vars[22m[0m
+[0m  [2m7:23[22m  [33mwarning[39m  'Crown' is defined but never used          [2mno-unused-vars[22m[0m
+[0m  [2m7:30[22m  [33mwarning[39m  'User' is defined but never used           [2mno-unused-vars[22m[0m
+[0m  [2m7:36[22m  [33mwarning[39m  'Star' is defined but never used           [2mno-unused-vars[22m[0m
+[0m  [2m7:42[22m  [33mwarning[39m  'Lock' is defined but never used           [2mno-unused-vars[22m[0m
+[0m  [2m7:48[22m  [33mwarning[39m  'Unlock' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m7:56[22m  [33mwarning[39m  'RefreshCw' is defined but never used      [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/pages/user/Dashboard.jsx[24m[0m
+[0m    [2m4:3[22m   [33mwarning[39m  'Calendar' is defined but never used                 [2mno-unused-vars[22m[0m
+[0m    [2m5:3[22m   [33mwarning[39m  'Clock' is defined but never used                    [2mno-unused-vars[22m[0m
+[0m    [2m6:3[22m   [33mwarning[39m  'Trophy' is defined but never used                   [2mno-unused-vars[22m[0m
+[0m    [2m7:3[22m   [33mwarning[39m  'Users' is defined but never used                    [2mno-unused-vars[22m[0m
+[0m    [2m8:3[22m   [33mwarning[39m  'AlertCircle' is defined but never used              [2mno-unused-vars[22m[0m
+[0m    [2m9:3[22m   [33mwarning[39m  'ArrowRight' is defined but never used               [2mno-unused-vars[22m[0m
+[0m   [2m10:3[22m   [33mwarning[39m  'BarChart3' is defined but never used                [2mno-unused-vars[22m[0m
+[0m   [2m11:3[22m   [33mwarning[39m  'Target' is defined but never used                   [2mno-unused-vars[22m[0m
+[0m   [2m12:3[22m   [33mwarning[39m  'Gamepad2' is defined but never used                 [2mno-unused-vars[22m[0m
+[0m   [2m13:3[22m   [33mwarning[39m  'Shield' is defined but never used                   [2mno-unused-vars[22m[0m
+[0m   [2m14:3[22m   [33mwarning[39m  'TrendingUp' is defined but never used               [2mno-unused-vars[22m[0m
+[0m   [2m15:3[22m   [33mwarning[39m  'Star' is defined but never used                     [2mno-unused-vars[22m[0m
+[0m   [2m16:3[22m   [33mwarning[39m  'Shirt' is defined but never used                    [2mno-unused-vars[22m[0m
+[0m   [2m17:3[22m   [33mwarning[39m  'Zap' is defined but never used                      [2mno-unused-vars[22m[0m
+[0m   [2m18:3[22m   [33mwarning[39m  'MapPin' is defined but never used                   [2mno-unused-vars[22m[0m
+[0m   [2m29:10[22m  [33mwarning[39m  'activeTab' is assigned a value but never used       [2mno-unused-vars[22m[0m
+[0m   [2m29:21[22m  [33mwarning[39m  'setActiveTab' is assigned a value but never used    [2mno-unused-vars[22m[0m
+[0m   [2m30:21[22m  [33mwarning[39m  'setTeamStats' is assigned a value but never used    [2mno-unused-vars[22m[0m
+[0m  [2m115:9[22m   [33mwarning[39m  'handleVotePoll' is assigned a value but never used  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/pages/user/Fixtures.jsx[24m[0m
+[0m   [2m2:10[22m   [33mwarning[39m  'Search' is defined but never used                 [2mno-unused-vars[22m[0m
+[0m   [2m2:18[22m   [33mwarning[39m  'Filter' is defined but never used                 [2mno-unused-vars[22m[0m
+[0m   [2m2:36[22m   [33mwarning[39m  'Star' is defined but never used                   [2mno-unused-vars[22m[0m
+[0m   [2m2:42[22m   [33mwarning[39m  'Bell' is defined but never used                   [2mno-unused-vars[22m[0m
+[0m   [2m2:48[22m   [33mwarning[39m  'ChevronDown' is defined but never used            [2mno-unused-vars[22m[0m
+[0m   [2m2:61[22m   [33mwarning[39m  'ChevronUp' is defined but never used              [2mno-unused-vars[22m[0m
+[0m   [2m2:72[22m   [33mwarning[39m  'Download' is defined but never used               [2mno-unused-vars[22m[0m
+[0m   [2m2:82[22m   [33mwarning[39m  'Share2' is defined but never used                 [2mno-unused-vars[22m[0m
+[0m   [2m2:90[22m   [33mwarning[39m  'Eye' is defined but never used                    [2mno-unused-vars[22m[0m
+[0m   [2m2:95[22m   [33mwarning[39m  'EyeOff' is defined but never used                 [2mno-unused-vars[22m[0m
+[0m   [2m2:103[22m  [33mwarning[39m  'BarChart3' is defined but never used              [2mno-unused-vars[22m[0m
+[0m   [2m2:114[22m  [33mwarning[39m  'Zap' is defined but never used                    [2mno-unused-vars[22m[0m
+[0m   [2m2:127[22m  [33mwarning[39m  'Sparkles' is defined but never used               [2mno-unused-vars[22m[0m
+[0m   [2m2:137[22m  [33mwarning[39m  'Trophy' is defined but never used                 [2mno-unused-vars[22m[0m
+[0m  [2m18:10[22m   [33mwarning[39m  'showStats' is assigned a value but never used     [2mno-unused-vars[22m[0m
+[0m  [2m18:21[22m   [33mwarning[39m  'setShowStats' is assigned a value but never used  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/pages/user/Injuries.jsx[24m[0m
+[0m  [2m3:3[22m   [33mwarning[39m  'AlertTriangle' is defined but never used   [2mno-unused-vars[22m[0m
+[0m  [2m3:18[22m  [33mwarning[39m  'Calendar' is defined but never used        [2mno-unused-vars[22m[0m
+[0m  [2m3:28[22m  [33mwarning[39m  'User' is defined but never used            [2mno-unused-vars[22m[0m
+[0m  [2m3:34[22m  [33mwarning[39m  'Stethoscope' is defined but never used     [2mno-unused-vars[22m[0m
+[0m  [2m3:47[22m  [33mwarning[39m  'Clock' is defined but never used           [2mno-unused-vars[22m[0m
+[0m  [2m3:54[22m  [33mwarning[39m  'CheckCircle' is defined but never used     [2mno-unused-vars[22m[0m
+[0m  [2m4:3[22m   [33mwarning[39m  'Filter' is defined but never used          [2mno-unused-vars[22m[0m
+[0m  [2m4:11[22m  [33mwarning[39m  'Search' is defined but never used          [2mno-unused-vars[22m[0m
+[0m  [2m4:19[22m  [33mwarning[39m  'Loader2' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m4:28[22m  [33mwarning[39m  'TrendingUp' is defined but never used      [2mno-unused-vars[22m[0m
+[0m  [2m4:40[22m  [33mwarning[39m  'Activity' is defined but never used        [2mno-unused-vars[22m[0m
+[0m  [2m4:50[22m  [33mwarning[39m  'AlertCircle' is defined but never used     [2mno-unused-vars[22m[0m
+[0m  [2m5:3[22m   [33mwarning[39m  'Thermometer' is defined but never used     [2mno-unused-vars[22m[0m
+[0m  [2m5:16[22m  [33mwarning[39m  'HeartPulse' is defined but never used      [2mno-unused-vars[22m[0m
+[0m  [2m5:28[22m  [33mwarning[39m  'Bone' is defined but never used            [2mno-unused-vars[22m[0m
+[0m  [2m5:34[22m  [33mwarning[39m  'Brain' is defined but never used           [2mno-unused-vars[22m[0m
+[0m  [2m5:41[22m  [33mwarning[39m  'Bandage' is defined but never used         [2mno-unused-vars[22m[0m
+[0m  [2m5:50[22m  [33mwarning[39m  'Eye' is defined but never used             [2mno-unused-vars[22m[0m
+[0m  [2m5:55[22m  [33mwarning[39m  'ChevronDown' is defined but never used     [2mno-unused-vars[22m[0m
+[0m  [2m6:3[22m   [33mwarning[39m  'ChevronUp' is defined but never used       [2mno-unused-vars[22m[0m
+[0m  [2m6:14[22m  [33mwarning[39m  'Mail' is defined but never used            [2mno-unused-vars[22m[0m
+[0m  [2m6:20[22m  [33mwarning[39m  'Phone' is defined but never used           [2mno-unused-vars[22m[0m
+[0m  [2m6:27[22m  [33mwarning[39m  'Shield' is defined but never used          [2mno-unused-vars[22m[0m
+[0m  [2m6:35[22m  [33mwarning[39m  'ClipboardCheck' is defined but never used  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/pages/user/MyTeam.jsx[24m[0m
+[0m  [2m6:17[22m  [33mwarning[39m  'setError' is assigned a value but never used  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/pages/user/Polls.jsx[24m[0m
+[0m    [2m3:34[22m  [33mwarning[39m  'XCircle' is defined but never used                                     [2mno-unused-vars[22m[0m
+[0m    [2m3:43[22m  [33mwarning[39m  'TrendingUp' is defined but never used                                  [2mno-unused-vars[22m[0m
+[0m    [2m3:55[22m  [33mwarning[39m  'Users' is defined but never used                                       [2mno-unused-vars[22m[0m
+[0m    [2m4:3[22m   [33mwarning[39m  'Calendar' is defined but never used                                    [2mno-unused-vars[22m[0m
+[0m    [2m4:13[22m  [33mwarning[39m  'Vote' is defined but never used                                        [2mno-unused-vars[22m[0m
+[0m    [2m4:19[22m  [33mwarning[39m  'Filter' is defined but never used                                      [2mno-unused-vars[22m[0m
+[0m    [2m4:27[22m  [33mwarning[39m  'Loader2' is defined but never used                                     [2mno-unused-vars[22m[0m
+[0m    [2m4:36[22m  [33mwarning[39m  'AlertCircle' is defined but never used                                 [2mno-unused-vars[22m[0m
+[0m    [2m4:49[22m  [33mwarning[39m  'ChevronRight' is defined but never used                                [2mno-unused-vars[22m[0m
+[0m    [2m5:3[22m   [33mwarning[39m  'Shield' is defined but never used                                      [2mno-unused-vars[22m[0m
+[0m    [2m5:11[22m  [33mwarning[39m  'Eye' is defined but never used                                         [2mno-unused-vars[22m[0m
+[0m    [2m5:16[22m  [33mwarning[39m  'MessageSquare' is defined but never used                               [2mno-unused-vars[22m[0m
+[0m    [2m5:31[22m  [33mwarning[39m  'Award' is defined but never used                                       [2mno-unused-vars[22m[0m
+[0m    [2m5:38[22m  [33mwarning[39m  'Target' is defined but never used                                      [2mno-unused-vars[22m[0m
+[0m    [2m5:46[22m  [33mwarning[39m  'PieChart' is defined but never used                                    [2mno-unused-vars[22m[0m
+[0m    [2m5:56[22m  [33mwarning[39m  'BarChart' is defined but never used                                    [2mno-unused-vars[22m[0m
+[0m    [2m6:3[22m   [33mwarning[39m  'Lock' is defined but never used                                        [2mno-unused-vars[22m[0m
+[0m    [2m6:9[22m   [33mwarning[39m  'Globe' is defined but never used                                       [2mno-unused-vars[22m[0m
+[0m    [2m6:16[22m  [33mwarning[39m  'Clock3' is defined but never used                                      [2mno-unused-vars[22m[0m
+[0m    [2m6:24[22m  [33mwarning[39m  'CalendarDays' is defined but never used                                [2mno-unused-vars[22m[0m
+[0m    [2m6:38[22m  [33mwarning[39m  'UserCheck' is defined but never used                                   [2mno-unused-vars[22m[0m
+[0m    [2m6:49[22m  [33mwarning[39m  'Timer' is defined but never used                                       [2mno-unused-vars[22m[0m
+[0m   [2m15:10[22m  [33mwarning[39m  'selectedPoll' is assigned a value but never used                       [2mno-unused-vars[22m[0m
+[0m   [2m15:24[22m  [33mwarning[39m  'setSelectedPoll' is assigned a value but never used                    [2mno-unused-vars[22m[0m
+[0m  [2m258:42[22m  [33mwarning[39m  'Icon' is defined but never used. Allowed unused args must match /^_/u  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/pages/user/Profile.jsx[24m[0m
+[0m    [2m3:3[22m   [33mwarning[39m  'User' is defined but never used                           [2mno-unused-vars[22m[0m
+[0m    [2m3:9[22m   [33mwarning[39m  'Mail' is defined but never used                           [2mno-unused-vars[22m[0m
+[0m    [2m3:15[22m  [33mwarning[39m  'Briefcase' is defined but never used                      [2mno-unused-vars[22m[0m
+[0m    [2m3:26[22m  [33mwarning[39m  'Building' is defined but never used                       [2mno-unused-vars[22m[0m
+[0m    [2m3:36[22m  [33mwarning[39m  'IdCard' is defined but never used                         [2mno-unused-vars[22m[0m
+[0m    [2m3:44[22m  [33mwarning[39m  'Shield' is defined but never used                         [2mno-unused-vars[22m[0m
+[0m    [2m4:3[22m   [33mwarning[39m  'Loader2' is defined but never used                        [2mno-unused-vars[22m[0m
+[0m    [2m4:12[22m  [33mwarning[39m  'AlertCircle' is defined but never used                    [2mno-unused-vars[22m[0m
+[0m    [2m4:25[22m  [33mwarning[39m  'CheckCircle' is defined but never used                    [2mno-unused-vars[22m[0m
+[0m    [2m4:38[22m  [33mwarning[39m  'Calendar' is defined but never used                       [2mno-unused-vars[22m[0m
+[0m    [2m5:3[22m   [33mwarning[39m  'Edit' is defined but never used                           [2mno-unused-vars[22m[0m
+[0m    [2m5:9[22m   [33mwarning[39m  'Key' is defined but never used                            [2mno-unused-vars[22m[0m
+[0m    [2m5:14[22m  [33mwarning[39m  'Lock' is defined but never used                           [2mno-unused-vars[22m[0m
+[0m    [2m5:20[22m  [33mwarning[39m  'LogOut' is defined but never used                         [2mno-unused-vars[22m[0m
+[0m    [2m5:28[22m  [33mwarning[39m  'Download' is defined but never used                       [2mno-unused-vars[22m[0m
+[0m    [2m5:38[22m  [33mwarning[39m  'Phone' is defined but never used                          [2mno-unused-vars[22m[0m
+[0m    [2m5:45[22m  [33mwarning[39m  'MapPin' is defined but never used                         [2mno-unused-vars[22m[0m
+[0m    [2m6:3[22m   [33mwarning[39m  'X' is defined but never used                              [2mno-unused-vars[22m[0m
+[0m    [2m6:6[22m   [33mwarning[39m  'Eye' is defined but never used                            [2mno-unused-vars[22m[0m
+[0m    [2m6:11[22m  [33mwarning[39m  'EyeOff' is defined but never used                         [2mno-unused-vars[22m[0m
+[0m    [2m6:19[22m  [33mwarning[39m  'Check' is defined but never used                          [2mno-unused-vars[22m[0m
+[0m    [2m6:26[22m  [33mwarning[39m  'Globe' is defined but never used                          [2mno-unused-vars[22m[0m
+[0m    [2m6:33[22m  [33mwarning[39m  'Bell' is defined but never used                           [2mno-unused-vars[22m[0m
+[0m    [2m6:49[22m  [33mwarning[39m  'PrivacyShield' is defined but never used                  [2mno-unused-vars[22m[0m
+[0m    [2m7:3[22m   [33mwarning[39m  'Save' is defined but never used                           [2mno-unused-vars[22m[0m
+[0m    [2m7:9[22m   [33mwarning[39m  'Zap' is defined but never used                            [2mno-unused-vars[22m[0m
+[0m    [2m7:14[22m  [33mwarning[39m  'Sparkles' is defined but never used                       [2mno-unused-vars[22m[0m
+[0m    [2m7:24[22m  [33mwarning[39m  'Trophy' is defined but never used                         [2mno-unused-vars[22m[0m
+[0m    [2m7:32[22m  [33mwarning[39m  'Crown' is defined but never used                          [2mno-unused-vars[22m[0m
+[0m    [2m7:39[22m  [33mwarning[39m  'Target' is defined but never used                         [2mno-unused-vars[22m[0m
+[0m    [2m7:47[22m  [33mwarning[39m  'Users' is defined but never used                          [2mno-unused-vars[22m[0m
+[0m    [2m7:54[22m  [33mwarning[39m  'Star' is defined but never used                           [2mno-unused-vars[22m[0m
+[0m    [2m8:3[22m   [33mwarning[39m  'TrendingUp' is defined but never used                     [2mno-unused-vars[22m[0m
+[0m    [2m8:15[22m  [33mwarning[39m  'BarChart3' is defined but never used                      [2mno-unused-vars[22m[0m
+[0m    [2m8:26[22m  [33mwarning[39m  'Award' is defined but never used                          [2mno-unused-vars[22m[0m
+[0m    [2m8:33[22m  [33mwarning[39m  'ChevronRight' is defined but never used                   [2mno-unused-vars[22m[0m
+[0m    [2m8:47[22m  [33mwarning[39m  'Share2' is defined but never used                         [2mno-unused-vars[22m[0m
+[0m    [2m8:55[22m  [33mwarning[39m  'Settings' is defined but never used                       [2mno-unused-vars[22m[0m
+[0m    [2m9:3[22m   [33mwarning[39m  'ShieldCheck' is defined but never used                    [2mno-unused-vars[22m[0m
+[0m    [2m9:16[22m  [33mwarning[39m  'Database' is defined but never used                       [2mno-unused-vars[22m[0m
+[0m    [2m9:26[22m  [33mwarning[39m  'Cpu' is defined but never used                            [2mno-unused-vars[22m[0m
+[0m    [2m9:31[22m  [33mwarning[39m  'Rocket' is defined but never used                         [2mno-unused-vars[22m[0m
+[0m    [2m9:39[22m  [33mwarning[39m  'Cloud' is defined but never used                          [2mno-unused-vars[22m[0m
+[0m    [2m9:46[22m  [33mwarning[39m  'Fingerprint' is defined but never used                    [2mno-unused-vars[22m[0m
+[0m   [2m10:3[22m   [33mwarning[39m  'Verified' is defined but never used                       [2mno-unused-vars[22m[0m
+[0m   [2m10:13[22m  [33mwarning[39m  'QrCode' is defined but never used                         [2mno-unused-vars[22m[0m
+[0m   [2m10:21[22m  [33mwarning[39m  'ShieldAlert' is defined but never used                    [2mno-unused-vars[22m[0m
+[0m   [2m10:34[22m  [33mwarning[39m  'Network' is defined but never used                        [2mno-unused-vars[22m[0m
+[0m   [2m10:50[22m  [33mwarning[39m  'Chip' is defined but never used                           [2mno-unused-vars[22m[0m
+[0m   [2m11:3[22m   [33mwarning[39m  'Wifi' is defined but never used                           [2mno-unused-vars[22m[0m
+[0m   [2m11:9[22m   [33mwarning[39m  'WifiOff' is defined but never used                        [2mno-unused-vars[22m[0m
+[0m   [2m11:18[22m  [33mwarning[39m  'Server' is defined but never used                         [2mno-unused-vars[22m[0m
+[0m   [2m11:26[22m  [33mwarning[39m  'HardDrive' is defined but never used                      [2mno-unused-vars[22m[0m
+[0m   [2m16:7[22m   [33mwarning[39m  'EditProfileModal' is assigned a value but never used      [2mno-unused-vars[22m[0m
+[0m  [2m175:7[22m   [33mwarning[39m  'ChangePasswordModal' is assigned a value but never used   [2mno-unused-vars[22m[0m
+[0m  [2m351:7[22m   [33mwarning[39m  'PrivacySettingsModal' is assigned a value but never used  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[4m/home/jovanijo/Documents/All_projects/cpd/apps/web/src/pages/user/Standings.jsx[24m[0m
+[0m   [2m3:3[22m   [33mwarning[39m  'Trophy' is defined but never used                [2mno-unused-vars[22m[0m
+[0m   [2m3:11[22m  [33mwarning[39m  'Calendar' is defined but never used              [2mno-unused-vars[22m[0m
+[0m   [2m3:21[22m  [33mwarning[39m  'Users' is defined but never used                 [2mno-unused-vars[22m[0m
+[0m   [2m3:28[22m  [33mwarning[39m  'MapPin' is defined but never used                [2mno-unused-vars[22m[0m
+[0m   [2m3:36[22m  [33mwarning[39m  'Target' is defined but never used                [2mno-unused-vars[22m[0m
+[0m   [2m3:44[22m  [33mwarning[39m  'Zap' is defined but never used                   [2mno-unused-vars[22m[0m
+[0m   [2m3:49[22m  [33mwarning[39m  'Star' is defined but never used                  [2mno-unused-vars[22m[0m
+[0m   [2m3:55[22m  [33mwarning[39m  'TrendingUp' is defined but never used            [2mno-unused-vars[22m[0m
+[0m   [2m4:3[22m   [33mwarning[39m  'BarChart3' is defined but never used             [2mno-unused-vars[22m[0m
+[0m   [2m4:14[22m  [33mwarning[39m  'Award' is defined but never used                 [2mno-unused-vars[22m[0m
+[0m   [2m4:21[22m  [33mwarning[39m  'Crown' is defined but never used                 [2mno-unused-vars[22m[0m
+[0m   [2m4:28[22m  [33mwarning[39m  'Shield' is defined but never used                [2mno-unused-vars[22m[0m
+[0m   [2m4:36[22m  [33mwarning[39m  'ChevronRight' is defined but never used          [2mno-unused-vars[22m[0m
+[0m   [2m4:50[22m  [33mwarning[39m  'Filter' is defined but never used                [2mno-unused-vars[22m[0m
+[0m   [2m4:58[22m  [33mwarning[39m  'Search' is defined but never used                [2mno-unused-vars[22m[0m
+[0m   [2m5:3[22m   [33mwarning[39m  'Clock' is defined but never used                 [2mno-unused-vars[22m[0m
+[0m   [2m5:10[22m  [33mwarning[39m  'TrendingDown' is defined but never used          [2mno-unused-vars[22m[0m
+[0m   [2m5:24[22m  [33mwarning[39m  'Users2' is defined but never used                [2mno-unused-vars[22m[0m
+[0m   [2m5:32[22m  [33mwarning[39m  'Home' is defined but never used                  [2mno-unused-vars[22m[0m
+[0m   [2m5:38[22m  [33mwarning[39m  'Share2' is defined but never used                [2mno-unused-vars[22m[0m
+[0m   [2m5:46[22m  [33mwarning[39m  'Download' is defined but never used              [2mno-unused-vars[22m[0m
+[0m   [2m5:56[22m  [33mwarning[39m  'Eye' is defined but never used                   [2mno-unused-vars[22m[0m
+[0m  [2m19:10[22m  [33mwarning[39m  'viewMode' is assigned a value but never used     [2mno-unused-vars[22m[0m
+[0m  [2m19:20[22m  [33mwarning[39m  'setViewMode' is assigned a value but never used  [2mno-unused-vars[22m[0m
+[0m[0m
+[0m[33m[1m✖ 384 problems (0 errors, 384 warnings)[22m[39m[0m
+[0m[33m[1m[22m[39m[0m
+[1G[0K⠙[1G[0K

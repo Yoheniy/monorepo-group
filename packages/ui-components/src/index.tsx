@@ -1,41 +1,20 @@
 import React, { type ReactNode } from 'react';
 
-const baseStyle = {
-  borderRadius: '0.5rem',
-  border: '1px solid #e2e8f0',
-  padding: '0.75rem 1rem'
-};
-
 type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-export function PrimaryButton(props: ButtonProps) {
+function mergeClassNames(...parts: Array<string | undefined>): string {
+  return parts.filter(Boolean).join(' ');
+}
+
+export function PrimaryButton({ className, type = 'button', style, ...props }: ButtonProps) {
   return (
-    <button
-      {...props}
-      style={{
-        ...baseStyle,
-        backgroundColor: '#2563eb',
-        color: '#ffffff',
-        fontWeight: 600,
-        cursor: 'pointer',
-        ...props.style
-      }}
-    />
+    <button type={type} {...props} className={mergeClassNames('cph-btn', 'cph-btn--primary', className)} style={style} />
   );
 }
 
-export function SecondaryButton(props: ButtonProps) {
+export function SecondaryButton({ className, type = 'button', style, ...props }: ButtonProps) {
   return (
-    <button
-      {...props}
-      style={{
-        ...baseStyle,
-        backgroundColor: '#f8fafc',
-        color: '#0f172a',
-        cursor: 'pointer',
-        ...props.style
-      }}
-    />
+    <button type={type} {...props} className={mergeClassNames('cph-btn', 'cph-btn--secondary', className)} style={style} />
   );
 }
 
@@ -47,15 +26,9 @@ type DataCardProps = {
 
 export function DataCard({ title, subtitle, children }: DataCardProps) {
   return (
-    <section
-      style={{
-        ...baseStyle,
-        backgroundColor: '#ffffff',
-        boxShadow: '0 4px 10px rgba(15, 23, 42, 0.05)'
-      }}
-    >
-      <h3 style={{ margin: '0 0 0.25rem 0' }}>{title}</h3>
-      {subtitle ? <p style={{ margin: '0 0 1rem 0', color: '#475569' }}>{subtitle}</p> : null}
+    <section className="cph-card">
+      <h3 className="cph-card__title">{title}</h3>
+      {subtitle ? <p className="cph-card__subtitle">{subtitle}</p> : null}
       <div>{children}</div>
     </section>
   );
@@ -68,40 +41,21 @@ type FormFieldProps = {
 
 export function FormField({ label, children }: FormFieldProps) {
   return (
-    <label style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem', marginBottom: '0.8rem' }}>
-      <span style={{ fontSize: '0.9rem', color: '#334155' }}>{label}</span>
+    <label className="cph-field">
+      <span className="cph-field__label">{label}</span>
       {children}
     </label>
   );
 }
 
 export function StatusBadge({ label, tone = 'neutral' }: { label: string; tone?: 'neutral' | 'success' | 'warning' }) {
-  const toneMap = {
-    neutral: '#e2e8f0',
-    success: '#bbf7d0',
-    warning: '#fde68a'
-  };
-
-  return (
-    <span
-      style={{
-        padding: '0.25rem 0.5rem',
-        borderRadius: '999px',
-        fontSize: '0.75rem',
-        fontWeight: 600,
-        backgroundColor: toneMap[tone],
-        color: '#0f172a'
-      }}
-    >
-      {label}
-    </span>
-  );
+  return <span className={mergeClassNames('cph-badge', `cph-badge--${tone}`)}>{label}</span>;
 }
 
 export function Panel({ heading, children }: { heading: string; children: ReactNode }) {
   return (
-    <div style={{ ...baseStyle, backgroundColor: '#f8fafc' }}>
-      <h4 style={{ marginTop: 0 }}>{heading}</h4>
+    <div className="cph-panel">
+      <h4 className="cph-panel__title">{heading}</h4>
       {children}
     </div>
   );

@@ -1,11 +1,12 @@
 # @cph/feature-x
 
-Feature package for the Event & Schedule Manager.
+Feature package for the **product catalog** (e-commerce demo, non-payment).
 
 ## Exports
-- `EventBoard`
-- `EventCreator`
-- `CampusEvent` type
+
+- `ProductCatalog`
+- `Product` type
 
 ## Integration
-This package composes UI from `@cph/ui-components` and logic helpers from `@cph/utils`.
+
+This package composes UI from `@cph/ui-components` and helpers from `@cph/utils` (`capitalizeWords`, `truncateText`, `formatCurrency`).

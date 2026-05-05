@@ -4,10 +4,17 @@
   "type": "module",
   "main": "src/index.tsx",
   "types": "src/index.tsx",
+  "exports": {
+    ".": {
+      "types": "./src/index.tsx",
+      "default": "./src/index.tsx"
+    },
+    "./auth-guards": "./src/authGuards.jsx"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "vitest run",
-    "lint": "eslint src --ext .ts,.tsx",
+    "lint": "eslint src --ext .ts,.tsx,.jsx",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {

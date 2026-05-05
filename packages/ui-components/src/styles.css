@@ -1,0 +1,365 @@
+/* Mini Shop — shared design system (import once per app entry; load DM Sans from index.html) */
+
+:root {
+  --cph-font: 'DM Sans', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --cph-bg0: #070a12;
+  --cph-bg1: #0f1424;
+  --cph-surface: rgba(255, 255, 255, 0.04);
+  --cph-surface-2: rgba(255, 255, 255, 0.07);
+  --cph-border: rgba(148, 163, 184, 0.14);
+  --cph-border-strong: rgba(148, 163, 184, 0.22);
+  --cph-text: #f8fafc;
+  --cph-muted: #94a3b8;
+  --cph-subtle: #64748b;
+  --cph-primary: #6366f1;
+  --cph-primary-dim: #4f46e5;
+  --cph-accent: #a855f7;
+  --cph-success: #34d399;
+  --cph-success-bg: rgba(52, 211, 153, 0.12);
+  --cph-warning: #fbbf24;
+  --cph-warning-bg: rgba(251, 191, 36, 0.14);
+  --cph-danger: #f87171;
+  --cph-danger-bg: rgba(248, 113, 113, 0.12);
+  --cph-radius: 14px;
+  --cph-radius-sm: 10px;
+  --cph-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.25), 0 12px 24px -6px rgba(0, 0, 0, 0.45);
+  --cph-shadow-glow: 0 0 0 1px rgba(99, 102, 241, 0.25), 0 16px 48px -12px rgba(99, 102, 241, 0.35);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--cph-font);
+  font-size: 15px;
+  line-height: 1.55;
+  letter-spacing: -0.01em;
+  color: var(--cph-text);
+  background:
+    radial-gradient(ellipse 100% 80% at 50% -30%, rgba(99, 102, 241, 0.22), transparent 55%),
+    radial-gradient(ellipse 60% 50% at 100% 0%, rgba(168, 85, 247, 0.12), transparent 45%),
+    linear-gradient(165deg, var(--cph-bg0) 0%, var(--cph-bg1) 55%, #0a0e18 100%);
+  -webkit-font-smoothing: antialiased;
+}
+
+code {
+  font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, monospace;
+  font-size: 0.88em;
+  padding: 0.12em 0.45em;
+  border-radius: 6px;
+  background: var(--cph-surface-2);
+  border: 1px solid var(--cph-border);
+  color: #c4b5fd;
+}
+
+.cph-app {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+.cph-app h1 {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.65rem, 3vw, 2.1rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  background: linear-gradient(120deg, #fff 0%, #cbd5e1 55%, #a5b4fc 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.cph-app > p {
+  margin: 0 0 1.75rem;
+  color: var(--cph-muted);
+  max-width: 62ch;
+}
+
+.cph-grid-shop {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+}
+
+.cph-grid-cart {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+  .cph-grid-cart {
+    grid-template-columns: minmax(0, 1.85fr) minmax(0, 1fr);
+  }
+}
+
+/* Cards */
+.cph-card {
+  border-radius: var(--cph-radius);
+  border: 1px solid var(--cph-border);
+  padding: 1.25rem 1.35rem;
+  background: linear-gradient(145deg, var(--cph-surface-2) 0%, var(--cph-surface) 100%);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--cph-shadow);
+}
+
+.cph-card__title {
+  margin: 0 0 0.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--cph-text);
+}
+
+.cph-card__subtitle {
+  margin: 0 0 1.15rem;
+  font-size: 0.875rem;
+  color: var(--cph-muted);
+  line-height: 1.45;
+}
+
+/* Panels (nested rows) */
+.cph-panel {
+  border-radius: var(--cph-radius-sm);
+  border: 1px solid var(--cph-border);
+  padding: 1rem 1.1rem;
+  background: rgba(15, 23, 42, 0.45);
+}
+
+.cph-panel__title {
+  margin: 0 0 0.65rem;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--cph-text);
+}
+
+/* Form fields */
+.cph-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-bottom: 1rem;
+}
+
+.cph-field__label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--cph-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.cph-app .cph-field input:not([type='checkbox']):not([type='radio']),
+.cph-app .cph-field textarea {
+  width: 100%;
+  border-radius: var(--cph-radius-sm);
+  border: 1px solid var(--cph-border-strong);
+  background: rgba(15, 23, 42, 0.65);
+  color: var(--cph-text);
+  font: inherit;
+  padding: 0.65rem 0.85rem;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.cph-app .cph-field input::placeholder,
+.cph-app .cph-field textarea::placeholder {
+  color: var(--cph-subtle);
+}
+
+.cph-app .cph-field input:hover,
+.cph-app .cph-field textarea:hover {
+  border-color: rgba(99, 102, 241, 0.35);
+}
+
+.cph-app .cph-field input:focus,
+.cph-app .cph-field textarea:focus {
+  border-color: rgba(99, 102, 241, 0.65);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+  background: rgba(15, 23, 42, 0.85);
+}
+
+.cph-app .cph-field textarea {
+  resize: vertical;
+  min-height: 5rem;
+}
+
+/* Buttons */
+.cph-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  border-radius: var(--cph-radius-sm);
+  padding: 0.55rem 1rem;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease, border-color 0.12s ease;
+}
+
+.cph-btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.45);
+}
+
+.cph-btn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.cph-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.cph-btn--primary {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.12);
+  background: linear-gradient(135deg, var(--cph-primary) 0%, var(--cph-accent) 100%);
+  box-shadow: var(--cph-shadow-glow);
+}
+
+.cph-btn--primary:hover:not(:disabled) {
+  filter: brightness(1.06);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.12), 0 20px 40px -12px rgba(99, 102, 241, 0.5);
+}
+
+.cph-btn--secondary {
+  color: var(--cph-text);
+  background: rgba(255, 255, 255, 0.06);
+  border-color: var(--cph-border-strong);
+}
+
+.cph-btn--secondary:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(148, 163, 184, 0.35);
+}
+
+.cph-btn--icon {
+  min-width: 2.35rem;
+  padding: 0.45rem 0.55rem;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+/* Layout helpers (features) */
+.cph-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.cph-stack {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.cph-stack--relaxed {
+  gap: 1.25rem;
+}
+
+.cph-row-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.cph-muted {
+  color: var(--cph-muted);
+  font-size: 0.88rem;
+}
+
+.cph-desc {
+  margin: 0 0 0.85rem;
+  color: var(--cph-muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.cph-price {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #fff;
+  letter-spacing: -0.02em;
+}
+
+.cph-cart-subtotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.75rem;
+  margin-top: 0.25rem;
+  border-top: 1px solid var(--cph-border);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.cph-empty-hint {
+  margin: 0;
+  color: var(--cph-subtle);
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+/* Badges */
+.cph-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border: 1px solid transparent;
+}
+
+.cph-badge--neutral {
+  color: #e2e8f8;
+  background: rgba(148, 163, 184, 0.15);
+  border-color: var(--cph-border);
+}
+
+.cph-badge--success {
+  color: #6ee7b7;
+  background: var(--cph-success-bg);
+  border-color: rgba(52, 211, 153, 0.25);
+}
+
+.cph-badge--warning {
+  color: #fcd34d;
+  background: var(--cph-warning-bg);
+  border-color: rgba(251, 191, 36, 0.3);
+}
+
+/* Alerts (apps / checkout) */
+.cph-alert {
+  margin: 0 0 1.25rem;
+  padding: 0.85rem 1rem;
+  border-radius: var(--cph-radius-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid transparent;
+}
+
+.cph-alert--success {
+  color: #6ee7b7;
+  background: var(--cph-success-bg);
+  border-color: rgba(52, 211, 153, 0.28);
+}
+
+.cph-alert--error {
+  color: #fecaca;
+  background: var(--cph-danger-bg);
+  border-color: rgba(248, 113, 113, 0.35);
+}
