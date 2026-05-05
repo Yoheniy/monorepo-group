@@ -1,87 +1,93 @@
-# Campus Productivity Hub Monorepo
+# ASTU Sport Monorepo
 
-A modular monorepo project that demonstrates reusable package development, feature composition, and individual system assembly.
+Monorepo refactor of the ASTU Sport platform into a teacher-style architecture with shared packages and coordinated app surfaces.
 
-## Monorepo Structure
+## What this repo now contains
 
-- `packages/ui-components`: shared reusable UI components
-- `packages/utils`: shared utility functions
-- `packages/feature-x`: Event & Schedule Manager feature package
-- `packages/feature-y`: Study Task Tracker feature package
-- `apps/system-a`: individual assembly (event-heavy)
-- `apps/system-b`: individual assembly (task-heavy)
-- `docs/architecture.md`: architecture and data flow documentation
+### Apps
+- `apps/web` - user + admin frontend (Vite + React)
+- `apps/api` - backend API service (Express + Prisma)
 
-## Tech Stack
+### Shared packages
+- `packages/ui-components` - reusable UI components and shared layouts
+- `packages/utils` - utility helpers
+- `packages/feature-x` - feature package
+- `packages/feature-y` - feature package (includes extracted auth guards)
+- `packages/eslint-config` - shared ESLint config
+- `packages/typescript-config` - shared TypeScript configs
 
-- npm workspaces
-- TypeScript
-- React + Vite
-- Vitest + Testing Library
-- ESLint
+## Architecture
 
-## Setup
+```mermaid
+flowchart LR
+  web[apps_web] --> fx[packages_feature_x]
+  web --> fy[packages_feature_y]
+  fx --> ui[packages_ui_components]
+  fy --> ui
+  web --> api[apps_api]
+  api --> db[(database_via_prisma)]
+```
+
+## Two integrated systems in one platform
+
+### Admin system
+Admin routes (`/admin/*`) manage:
+- users and approvals
+- tournaments and leagues
+- teams and participants
+- matches and events
+- standings
+- injuries
+- polls and votes
+
+### User system
+User routes (`/user/*`) handle:
+- personal dashboard
+- fixtures and standings
+- polls
+- profile
+- injury view
+
+### How they work together
+Both systems use the same API (`apps/api`) and database. Admin-side updates are immediately visible to user-side pages through shared backend data.
+
+## Monorepo scripts (root)
 
 ```bash
 npm install
+npm run dev        # turbo runs @astu/web + @astu/api
+npm run build      # turbo build for web/api
+npm run lint       # turbo lint for web/api
+npm run typecheck  # turbo typecheck tasks
 ```
 
-## Run
+## Environment setup
 
-```bash
-npm run dev:system-a
-npm run dev:system-b
-```
+Copy from `.env.example` and configure values:
 
-## Quality Scripts
+- `DATABASE_URL`
+- `PORT`
+- `JWT_SECRET`
+- `CLOUDINARY_CLOUD_NAME`
+- `CLOUDINARY_API_KEY`
+- `CLOUDINARY_API_SECRET`
+- `CORS_ORIGINS`
+- `VITE_API_URL`
 
-```bash
-npm run lint
-npm run typecheck
-npm run test
-npm run build
-```
+## API URL migration update
 
-## Package Reuse Rules
+Frontend requests are now centralized through:
+- `apps/web/src/config/api.js` (`API_BASE_URL` from `VITE_API_URL`)
 
-- `feature-x` and `feature-y` consume `@cph/ui-components` and `@cph/utils`
-- `system-a` and `system-b` import composites from feature packages
-- system apps perform configuration and assembly only (no duplicated feature logic)
+No frontend page should hardcode `http://localhost:5000/api` directly anymore.
 
-## Contribution Map (2 Members)
+## Teacher-alignment notes
 
-- Member A: `packages/ui-components`, `packages/utils`, shared quality fixes, package docs
-- Member B: `packages/feature-x`, `packages/feature-y`, `apps/system-a`, `apps/system-b`, root submission docs
+This refactor aligns to teacher-style monorepo principles:
+- app/package separation
+- centralized workspace orchestration with Turborepo
+- shared lint/typescript config packages
+- shared UI/domain packages
+- one backend powering role-based frontends
 
-## Git Workflow (Teacher Verification)
-
-- Use branches only; do not push directly to `main`
-- Member A branch: `feat/member-a-ui-utils`
-- Member B branch: `feat/member-b-features-apps`
-- Minimum cadence: 1 commit per member per day for 5 days (10 total commits minimum)
-- Every PR must include summary, test proof, and teammate review comment
-
-### Guides (start here)
-
-| Doc | Purpose |
-| --- | --- |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | Ownership, branches, PR rules, commit style |
-| [docs/two-member-5-day-commit-plan.md](docs/two-member-5-day-commit-plan.md) | Day-by-day scopes and example messages |
-| [docs/day1-day2-playbook.md](docs/day1-day2-playbook.md) | Copy-paste git commands for Days 1–2 |
-| [docs/day3-day4-playbook.md](docs/day3-day4-playbook.md) | Copy-paste git commands for Days 3–4 |
-| [docs/day5-finalization-playbook.md](docs/day5-finalization-playbook.md) | Day 5 quality + docs + PR-5 merge |
-| [docs/github-commands-cheatsheet.md](docs/github-commands-cheatsheet.md) | Short git reference |
-| [docs/contribution-tracker.md](docs/contribution-tracker.md) | Fill SHAs and PR links for your teacher |
-| [docs/commit-execution-checklist.md](docs/commit-execution-checklist.md) | Checkbox progress against the plan |
-
-GitHub PR template: [.github/PULL_REQUEST_TEMPLATE.md](.github/PULL_REQUEST_TEMPLATE.md)
-
-## Submission Checklist
-
-- [x] Monorepo with required package layout
-- [x] Shared utilities implemented
-- [x] Shared UI components implemented
-- [x] Feature-X and Feature-Y integrated with shared packages
-- [x] Individual systems assembled by configuration/composition
-- [x] Root and package READMEs present
-- [x] Lint, typecheck, tests, and build passing
+See `docs/teacher-evaluation-walkthrough.md` for presentation/demo framing.

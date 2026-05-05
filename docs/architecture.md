@@ -32,19 +32,22 @@ flowchart LR
 ## Package Responsibilities
 
 ### Shared
+
 - `ui-components`: visual primitives and reusable composed blocks (`DataCard`, `PrimaryButton`, etc.)
-- `utils`: non-UI shared logic (`formatDate`, `truncateText`, `apiClient`, etc.)
+- `utils`: non-UI shared logic (`formatCurrency`, `truncateText`, `isValidEmail`, `apiClient`, etc.)
 
 ### Features
-- `feature-x`: Event and schedule workflows
-- `feature-y`: Study task workflows
+
+- `feature-x`: **Product catalog** — search, category filters, product rows, add-to-cart callbacks
+- `feature-y`: **Cart and demo checkout** — line items with quantity controls, subtotal display, shipping form (validation is orchestrated in apps via `apiClient` + `isValidEmail`)
 
 ### Systems
-- `system-a`: event-first assembly that includes quick task capture
-- `system-b`: task-first assembly that includes event context panel
+
+- `system-a`: **Shop-first** — large catalog column with cart and checkout alongside
+- `system-b`: **Cart-first** — cart and checkout primary; narrow catalog for add-ons
 
 ## Data and Composition Notes
 
-- Features own domain models (`CampusEvent`, `StudyTask`) and expose typed component APIs.
-- Systems pass configuration/state props into feature components.
-- Utility functions centralize formatting and async wrapper behavior.
+- Features own domain models (`Product`, `CartLine`) and expose typed component APIs.
+- Apps own **inventory seed data** and **cart state**; they pass props into feature components.
+- `formatCurrency` keeps price display consistent; `apiClient` wraps demo checkout attempts with structured success/error results.

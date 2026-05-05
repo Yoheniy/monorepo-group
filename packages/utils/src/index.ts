@@ -23,6 +23,15 @@ export function truncateText(value: string, maxLength = 80): string {
   return `${value.slice(0, Math.max(0, maxLength - 3))}...`;
 }
 
+/** `amountCents` is an integer (e.g. 1299 => $12.99 in USD). */
+export function formatCurrency(amountCents: number, currency = 'USD'): string {
+  return new Intl.NumberFormat('en-US', { style: 'currency', currency }).format(amountCents / 100);
+}
+
+export function isValidEmail(value: string): boolean {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim());
+}
+
 export type ApiResponse<T> = {
   ok: boolean;
   data?: T;
